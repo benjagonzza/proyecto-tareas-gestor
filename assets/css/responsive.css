@@ -1,0 +1,16 @@
+@media (max-width: 768px) {
+
+    .kanban {
+        flex-direction: column;
+    }
+
+    .columna {
+        width: 100%;
+    }
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+}

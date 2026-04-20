@@ -1,0 +1,93 @@
+:root {
+    --color-primario: #2563eb;
+    --color-secundario: #7c3aed;
+    --color-terciario: #10b981;
+
+    --color-pendiente: #3b82f6;
+    --color-progreso: #f59e0b;
+    --color-completado: #10b981;
+
+    --fuente: 'Segoe UI', sans-serif;
+}
+
+body {
+    margin: 0;
+    font-family: var(--fuente);
+    background: #f4f6f8;
+}
+
+/* HEADER */
+header {
+    background: var(--color-primario);
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    margin-left: 15px;
+    text-decoration: none;
+}
+
+/* FORM */
+.form-section {
+    padding: 20px;
+    max-width: 500px;
+    margin: auto;
+    background: white;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea, select {
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+/* BOTÓN */
+button {
+    background: var(--color-primario);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+/* KANBAN */
+.kanban {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    gap: 10px;
+}
+
+.columna {
+    background: white;
+    padding: 10px;
+    width: 30%;
+    border-radius: 10px;
+}
+
+.tareas-container {
+    min-height: 100px;
+}
+
+/* TARJETAS */
+.tarea {
+    background: #eee;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
