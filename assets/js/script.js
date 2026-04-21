@@ -26,7 +26,7 @@ formulario.addEventListener("submit", function(e) {
 
     // CREAR TARJETA
     const card = document.createElement("div");
-    card.classList.add("tarea");
+    card.classList.add("tarea", "pendiente");
 
     card.innerHTML = `
         <h4>${tarea}</h4>
@@ -48,13 +48,18 @@ formulario.addEventListener("submit", function(e) {
     // EVENTOS BOTONES
 
     btnProgreso.addEventListener("click", () => {
-        progreso.appendChild(card);
-        actualizarContadores();
+    card.classList.remove("pendiente");
+    card.classList.add("en-progreso");
+    progreso.appendChild(card);
+    actualizarContadores();
     });
 
     btnCompletar.addEventListener("click", () => {
+        card.classList.remove("en-progreso");
+        card.classList.add("completada");
         completadas.appendChild(card);
         actualizarContadores();
+        
     });
 
     btnEliminar.addEventListener("click", () => {

@@ -88,10 +88,12 @@ button:hover {
 
 /* TARJETAS */
 .tarea {
-    background: #eee;
+    background: white;
     padding: 10px;
     margin: 10px 0;
-    border-radius: 5px;
+    border-radius: 8px;
+    border-left: 5px solid var(--color-pendiente);
+}
 }
 .logo {
     display: flex;
@@ -101,4 +103,15 @@ button:hover {
 .logo img {
     width: 40px;
     height: 40px;
+}
+.pendiente {
+    border-left: 5px solid var(--color-pendiente);
+}
+
+.en-progreso {
+    border-left: 5px solid var(--color-progreso);
+}
+
+.completada {
+    border-left: 5px solid var(--color-completado);
 }
