@@ -1,3 +1,7 @@
+@font-face {
+    font-family: 'MiFuente';
+    src: url('../fonts/Roboto-Italic-VariableFont_wdth\,wght.ttf') format('truetype');
+}
 :root {
     --color-primario: #2563eb;
     --color-secundario: #7c3aed;
@@ -11,9 +15,7 @@
 }
 
 body {
-    margin: 0;
-    font-family: var(--fuente);
-    background: #f4f6f8;
+    font-family: 'MiFuente', sans-serif;    
 }
 
 /* HEADER */
@@ -90,4 +92,13 @@ button:hover {
     padding: 10px;
     margin: 10px 0;
     border-radius: 5px;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.logo img {
+    width: 40px;
+    height: 40px;
 }
