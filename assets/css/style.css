@@ -91,9 +91,7 @@ button:hover {
     background: white;
     padding: 10px;
     margin: 10px 0;
-    border-radius: 8px;
-    border-left: 5px solid var(--color-pendiente);
-}
+    border-radius: 5px;
 }
 .logo {
     display: flex;
